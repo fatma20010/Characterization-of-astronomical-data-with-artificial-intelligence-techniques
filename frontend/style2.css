@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box
+    font_family:'poppins',sans-serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./image/9d037473-f906-4761-a220-a285a3748e8c.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+    .logo{
+        font-size: 100px;
+        color:aliceblue;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    .home{
+        height:60vh;
+        display:flex;
+        align-items:center;
+        padding:0 20%
+    }
+    .home-content{
+    max-width: 600px;
+    }
+    .home-content h1{
+        color: aliceblue;
+        font-size:43px ;
+        font-weight: 700;
+        line-height:1.2 ;
+    }
+
+.home-content h3{
+    font-size:32px;
+    font-weight: 700;
+    color:rgba(249, 18, 107, 0.626);
+}
+.home-content p{
+    font-size: 20px;
+    color:aliceblue;
+    margin:20px 0 40px;
+}
+.home-content.btn-box{
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position:relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:100%;
+    background: rgba(255, 235, 205, 0.538);
+    border:2px solid rgba(255, 235, 205, 0.538);
+    border-radius: 8px;
+    font-size: 19px;
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    background: transparent;
+    color:rgba(255, 235, 205, 0.538);
+    z-index: 1;
+    overflow:hidden ;
+
+}
+.btn-box a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgba(255, 235, 205, 0.538);
+    z-index: -1;
+    transition: .5s;
+
+
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-sci {
+    position:absolute;
+    bottom:40px;
+    width:170px; 
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    z-index:1;
+    overflow:hidden;
+    transition:.5s;
+}
+.home-sci a:hover{
+    color:rgba(249, 18, 107, 0.626);
+}
+.home-sci a::before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background:aliceblue;
+    z-index: -1;
+    transition:.5s;
+}
+.home-sci a:hover::before{
+    width:100%;
+
+}
+.images{
+    width:45%;
+    height: 80%;
+    position: absolute;
+    bottom:0.5;
+    right: -110px;
+}
+
