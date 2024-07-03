@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style4.css" >
+</head>
+    <title>GO</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <form action="{{url_for('predict')}}" method="post">
+                <h1>CLASSIFY!</h1>
+                <style>
+                    .input-box label {
+                        font-size: 14px; /* Adjust the font size as needed */
+                    }
+                </style>
+                
+                <div class="input-box">
+                    <label for="ra">RA (from 0 to 24 hours):</label>
+                    <input type="text" id="ra" name="ra" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="dec">Dec (from -90 degrees to +90 degrees):</label>
+                    <input type="text" id="dec" name="dec" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="u">u (from 0 to 20):</label>
+                    <input type="text" id="u" name="u" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="g">g (from 0 to 30):</label>
+                    <input type="text" id="g" name="g" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="r">r (from 0 to 30):</label>
+                    <input type="text" id="r" name="r" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="i">i (from 0 to 25):</label>
+                    <input type="text" id="i" name="i" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="z">z (from 0 to 25):</label>
+                    <input type="text" id="z" name="z" required>
+                </div>
+                <button type="submit" class ="btn">predict</button>
+            </form>
+            
+            
+        </div>
+        <div class="cadre-resultat">
+            <p><b>YOUR RESULT:{{prediction_text}}</b></p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+    </header>
+    
+</body>
+</html>
